@@ -1,0 +1,46 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.clock-container {
+    background-color: #444;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.digital-clock {
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .digital-clock {
+        font-size: 4rem; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .digital-clock {
+        font-size: 3rem; /* Further adjust font size for mobile devices */
+    }
+}
+
+@media (max-width: 320px) {
+    .digital-clock {
+        font-size: 2rem; /* Increase font size for very small screens */
+    }
+}
